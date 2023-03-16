@@ -1,0 +1,10 @@
+﻿Burada çok basit olarak iki sayının toplamını göreceğiz.
+Dolayısıyla ekrana 2 tane textbox koyacağız..
+Bir tane buton olacak.
+Sonucu ilk aşamada MessageBox kullanarak vereceğiz..
+Programdan Çıkış tuşuda olsun.
+
+
+-- Sonucu bu sefer messagebox yerine label comp içinde olacak sekilde veriniz..
+
+--Combobox içerisinde işlem tipini seçtirip ona göre işlemi yapınız .. Örnek +,-,*,/
