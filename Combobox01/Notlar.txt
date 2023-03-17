@@ -1,0 +1,16 @@
+﻿Yapılacaklar .. 
+
+Combobox kullanacağız..
+
+Form üzerinde bir adet label , buton, combobox olacak..
+
+Butona basıldığında combobox içeriği(elemanları) doldurulacak
+
+İçerik şöyle olacak
+1.sayı
+2.sayı
+.
+.
+.
+.
+20.sayi  gibi gözüksün

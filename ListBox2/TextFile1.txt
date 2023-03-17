@@ -1,0 +1,15 @@
+﻿Ekranda 3 tane texbox olsun
+her ikisindede ayrı ayrı degerler girilsin
+bu degerler arasında random sayı üretelim
+ve kaç sayı üretmek istediğini soralım
+listbox ı buna göre dolduralım.
+1.texbox illaki küçük sayı olsun
+2.textbox illaki büyük sayı olsun
+aksi durumda hata verilsin..
+
+örenk : 
+1. txt : 5
+2. txt : 50
+5 ile 50 arasında sayı üretilecek(istenen adet kadar)
+bunu  bir label'e yazdıralım
+mesajda olsun 5-50 arasında 100 sayı üretilmiştir..
