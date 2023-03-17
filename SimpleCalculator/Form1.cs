@@ -19,7 +19,7 @@ namespace SimpleCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
         private void btnHesapla_Click(object sender, EventArgs e)

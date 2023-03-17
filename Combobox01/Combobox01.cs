@@ -35,5 +35,10 @@ namespace Combobox01
             textBox1.Select(); // ilk yazılacak yeri textbox1 seçili gelsin.
             comboBox1.Enabled=false; // combobox başta veri işlenemez olsun
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

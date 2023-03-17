@@ -31,5 +31,10 @@ namespace MLTextBox
 
                 textBox1.Text = textBox1.Text+randomSayi.ToString()+"\r\n"; // altsatıra geçmek için
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

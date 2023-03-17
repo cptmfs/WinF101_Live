@@ -7,7 +7,7 @@ using ListBox01;
 
 namespace Menu2ndForm
 {
-    internal static class Program:ListBox01.Program
+    internal static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -17,7 +17,7 @@ namespace Menu2ndForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu2ndForm());
         }
     }
 }
