@@ -36,9 +36,9 @@ namespace ListBox2
                         rastgeleSayi = r.Next(sayi1, sayi2);
                         //listBox1.Items.Add(i + ".sayi :" + r.Next(sayi1, sayi2));
                         listBox1.Items.Add(rastgeleSayi);
-                        toplam += rastgeleSayi;
+                        toplam += rastgeleSayi; // üretilen syıların toplamını aldık.
                     }
-                    lblToplam.Text = toplam.ToString();
+                    lblToplam.Text = toplam.ToString(); // lblToplama yazdırdık..
 
                 }
                 else
