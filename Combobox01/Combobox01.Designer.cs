@@ -1,6 +1,6 @@
 ﻿namespace Combobox01
 {
-    partial class Form1
+    partial class Combobox01
     {
         /// <summary>
         /// Required designer variable.

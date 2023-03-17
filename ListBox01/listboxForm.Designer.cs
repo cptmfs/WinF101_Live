@@ -1,6 +1,6 @@
 ﻿namespace ListBox01
 {
-    partial class Form1
+    partial class listboxForm
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -78,18 +79,29 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Sayılar";
             // 
-            // Form1
+            // btnCikis
+            // 
+            this.btnCikis.Location = new System.Drawing.Point(56, 200);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(53, 31);
+            this.btnCikis.TabIndex = 10;
+            this.btnCikis.Text = "Çıkış";
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            // 
+            // listboxForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(338, 301);
+            this.ClientSize = new System.Drawing.Size(166, 247);
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "listboxForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -103,6 +115,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnCikis;
     }
 }
 

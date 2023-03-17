@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MessageForm
 {
-    public partial class Form1 : Form
+    public partial class MessageForm : Form
     {
-        public Form1()
+        public MessageForm()
         {
             InitializeComponent();
         }

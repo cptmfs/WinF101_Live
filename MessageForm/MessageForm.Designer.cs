@@ -1,6 +1,6 @@
 ﻿namespace MessageForm
 {
-    partial class Form1
+    partial class MessageForm
     {
         /// <summary>
         /// Required designer variable.

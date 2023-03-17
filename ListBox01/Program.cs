@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ListBox01
 {
-    internal static class Program
+    public static class Program
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace ListBox01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new listboxForm());
         }
     }
 }

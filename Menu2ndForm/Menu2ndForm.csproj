@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E7D29AAB-B82D-4655-91E7-E459AF1D1538}</ProjectGuid>
+    <ProjectGuid>{47EA6DCE-5999-4D65-A130-5C4087F20D14}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>MessageForm</RootNamespace>
-    <AssemblyName>MessageForm</AssemblyName>
+    <RootNamespace>Menu2ndForm</RootNamespace>
+    <AssemblyName>Menu2ndForm</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MessageForm.cs">
+    <Compile Include="Combobox01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MessageForm.Designer.cs">
-      <DependentUpon>MessageForm.cs</DependentUpon>
+    <Compile Include="Combobox01.Designer.cs">
+      <DependentUpon>Combobox01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MessageForm.resx">
-      <DependentUpon>MessageForm.cs</DependentUpon>
+    <EmbeddedResource Include="Combobox01.resx">
+      <DependentUpon>Combobox01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +102,37 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Combobox01\Combobox01.csproj">
+      <Project>{36e8187f-60a7-436a-9d2c-5558c0b0300d}</Project>
+      <Name>Combobox01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListBox01\ListBox01.csproj">
+      <Project>{99c282f3-a270-46d9-a0a9-ff8cd4ec8b92}</Project>
+      <Name>ListBox01</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ListBox2\ListBox2.csproj">
+      <Project>{f7259791-5e1c-4301-9195-3f7bb29aa083}</Project>
+      <Name>ListBox2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MessageForm\MessageForm.csproj">
+      <Project>{e7d29aab-b82d-4655-91e7-e459af1d1538}</Project>
+      <Name>MessageForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MLTextBox\MLTextBox.csproj">
+      <Project>{b35c38f9-6a32-4eb2-8f48-b8827490bb88}</Project>
+      <Name>MLTextBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RadioButton\RadioButton.csproj">
+      <Project>{20f00660-b92c-4342-a2ce-450e9fe2575f}</Project>
+      <Name>RadioButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleCalculator\SimpleCalculator.csproj">
+      <Project>{9cb008ee-9085-4b5d-a6d6-3f250ea4d0d0}</Project>
+      <Name>SimpleCalculator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

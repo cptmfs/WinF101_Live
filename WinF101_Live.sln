@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox01", "ListBox01\List
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBox2", "ListBox2\ListBox2.csproj", "{F7259791-5E1C-4301-9195-3F7BB29AA083}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLTextBox", "MLTextBox\MLTextBox.csproj", "{B35C38F9-6A32-4EB2-8F48-B8827490BB88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu2ndForm", "Menu2ndForm\Menu2ndForm.csproj", "{47EA6DCE-5999-4D65-A130-5C4087F20D14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{F7259791-5E1C-4301-9195-3F7BB29AA083}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7259791-5E1C-4301-9195-3F7BB29AA083}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7259791-5E1C-4301-9195-3F7BB29AA083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35C38F9-6A32-4EB2-8F48-B8827490BB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35C38F9-6A32-4EB2-8F48-B8827490BB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35C38F9-6A32-4EB2-8F48-B8827490BB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35C38F9-6A32-4EB2-8F48-B8827490BB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,1 @@
+﻿1 ile 10 arasında rastgele ondalıklı sayı üretip bunları text box içerisinde gösteriniz..

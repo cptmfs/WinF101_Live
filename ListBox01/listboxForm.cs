@@ -8,11 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ListBox01
 {
-    public partial class Form1 : Form
+    public partial class listboxForm : Form
     {
-        public Form1()
+        public listboxForm()
         {
             InitializeComponent();
         }
@@ -35,6 +36,12 @@ namespace ListBox01
 
             
             
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
         }
     }
 }
