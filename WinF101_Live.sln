@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLTextBox", "MLTextBox\MLTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu2ndForm", "Menu2ndForm\Menu2ndForm.csproj", "{47EA6DCE-5999-4D65-A130-5C4087F20D14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckedListBox", "CheckedListBox\CheckedListBox.csproj", "{9B15F5DE-D0A3-45D6-AECD-95D8F67F01AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateDiffer", "DateTimePicker\DateDiffer.csproj", "{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47EA6DCE-5999-4D65-A130-5C4087F20D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B15F5DE-D0A3-45D6-AECD-95D8F67F01AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B15F5DE-D0A3-45D6-AECD-95D8F67F01AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B15F5DE-D0A3-45D6-AECD-95D8F67F01AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B15F5DE-D0A3-45D6-AECD-95D8F67F01AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
