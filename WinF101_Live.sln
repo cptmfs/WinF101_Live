@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckedListBox", "CheckedLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateDiffer", "DateTimePicker\DateDiffer.csproj", "{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonthDays", "MonthDays\MonthDays.csproj", "{B8E64E91-C865-4259-A935-2653F4406248}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D86C8F2-C3DE-49C7-8597-CAAE0651054A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E64E91-C865-4259-A935-2653F4406248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E64E91-C865-4259-A935-2653F4406248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E64E91-C865-4259-A935-2653F4406248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E64E91-C865-4259-A935-2653F4406248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
