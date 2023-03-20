@@ -35,11 +35,11 @@
             this.dtpEnd = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTime2 = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxDays = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +109,15 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "GG/AA/YYYY 00:00:00";
             // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(6, 33);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(94, 18);
+            this.lblTime.TabIndex = 11;
+            this.lblTime.Text = "GG/AA/YYYY";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -127,15 +136,6 @@
             this.lblTime2.TabIndex = 12;
             this.lblTime2.Text = "GG/AA/YYYY 00:00:00";
             // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(6, 33);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(94, 18);
-            this.lblTime.TabIndex = 11;
-            this.lblTime.Text = "GG/AA/YYYY";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(399, 329);
@@ -146,15 +146,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox1
+            // lbxDays
             // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(12, 134);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(437, 184);
-            this.listBox1.TabIndex = 12;
+            this.lbxDays.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lbxDays.FormattingEnabled = true;
+            this.lbxDays.ItemHeight = 18;
+            this.lbxDays.Location = new System.Drawing.Point(12, 134);
+            this.lbxDays.Name = "lbxDays";
+            this.lbxDays.Size = new System.Drawing.Size(437, 184);
+            this.lbxDays.TabIndex = 12;
             // 
             // Form1
             // 
@@ -162,7 +162,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(461, 441);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxDays);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -172,7 +172,7 @@
             this.Controls.Add(this.dtpStart);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -196,7 +196,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTime2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxDays;
     }
 }
 

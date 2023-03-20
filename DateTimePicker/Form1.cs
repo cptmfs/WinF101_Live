@@ -31,12 +31,12 @@ namespace DateTimePicker
             string day = Math.Round(sonuc.TotalDays,2).ToString() + "Gün veya";
             string hour = Math.Round(sonuc.TotalHours,2).ToString() + "Saat veya";
             string minute = Math.Round(sonuc.TotalMinutes,2).ToString() + "Dakika";
-            listBox1.Items.Clear();
-            listBox1.Items.Add(year);  
-            listBox1.Items.Add(month);  
-            listBox1.Items.Add(day);  
-            listBox1.Items.Add(hour);  
-            listBox1.Items.Add(minute);
+            lbxDays.Items.Clear();
+            lbxDays.Items.Add(year);  
+            lbxDays.Items.Add(month);  
+            lbxDays.Items.Add(day);  
+            lbxDays.Items.Add(hour);  
+            lbxDays.Items.Add(minute);
 
 
 

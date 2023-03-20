@@ -41,9 +41,9 @@
             // nudYear
             // 
             this.nudYear.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.nudYear.Location = new System.Drawing.Point(80, 44);
+            this.nudYear.Location = new System.Drawing.Point(80, 46);
             this.nudYear.Maximum = new decimal(new int[] {
-            2100,
+            2200,
             0,
             0,
             0});
@@ -97,6 +97,7 @@
             this.btnList.TabIndex = 4;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // lbxDays
             // 
@@ -106,6 +107,7 @@
             this.lbxDays.Location = new System.Drawing.Point(12, 189);
             this.lbxDays.Name = "lbxDays";
             this.lbxDays.Size = new System.Drawing.Size(377, 148);
+            this.lbxDays.Sorted = true;
             this.lbxDays.TabIndex = 5;
             // 
             // btnExit
@@ -133,7 +135,7 @@
             this.Controls.Add(this.nudYear);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
