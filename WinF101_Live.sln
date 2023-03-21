@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateDiffer", "DateTimePicke
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonthDays", "MonthDays\MonthDays.csproj", "{B8E64E91-C865-4259-A935-2653F4406248}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabControl", "TabControl\TabControl.csproj", "{9982CE61-443F-4B81-91CB-A4112BA0B2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureBox", "PictureBox\PictureBox.csproj", "{B06D251C-FA61-4110-9F34-AD49BA2DE141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{B8E64E91-C865-4259-A935-2653F4406248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E64E91-C865-4259-A935-2653F4406248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E64E91-C865-4259-A935-2653F4406248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9982CE61-443F-4B81-91CB-A4112BA0B2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9982CE61-443F-4B81-91CB-A4112BA0B2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9982CE61-443F-4B81-91CB-A4112BA0B2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9982CE61-443F-4B81-91CB-A4112BA0B2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06D251C-FA61-4110-9F34-AD49BA2DE141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06D251C-FA61-4110-9F34-AD49BA2DE141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06D251C-FA61-4110-9F34-AD49BA2DE141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06D251C-FA61-4110-9F34-AD49BA2DE141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

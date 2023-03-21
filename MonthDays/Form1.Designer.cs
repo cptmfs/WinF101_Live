@@ -107,7 +107,6 @@
             this.lbxDays.Location = new System.Drawing.Point(12, 189);
             this.lbxDays.Name = "lbxDays";
             this.lbxDays.Size = new System.Drawing.Size(377, 148);
-            this.lbxDays.Sorted = true;
             this.lbxDays.TabIndex = 5;
             // 
             // btnExit
