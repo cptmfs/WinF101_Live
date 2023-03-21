@@ -13,11 +13,11 @@ namespace PictureBox
     public partial class Form1 : Form
     {
         public string dosyaYol;
-        
 
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btnMove_Click(object sender, EventArgs e)
@@ -85,8 +85,9 @@ namespace PictureBox
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Form1 frm = new Form1();
-            pictureBox1.ImageLocation = dosyaYol;
+            
+        //Form1 frm = new Form1();
+        pictureBox1.ImageLocation = dosyaYol;
             pictureBox1.Location = new Point(155, 88);
             //MessageBox.Show($"Form yükseklik :  {frm.Width}\r\nForm Genişlik : {frm.Height}");
         }
