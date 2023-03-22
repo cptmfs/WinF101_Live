@@ -166,6 +166,9 @@ namespace ADO01
         private void cbxCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
             SqlCommand cmd7 = new SqlCommand("Select Country from Customers where Country=@Country",connection);
+            cmd7.Parameters.AddWithValue("@Country",cbxCountry.SelectedItem);
+            cmd7.ExecuteNonQuery();
+
 
         }
     }
