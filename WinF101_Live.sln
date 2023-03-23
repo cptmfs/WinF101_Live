@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO01", "ADO01\ADO01.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADO01_V1", "ADO01_V1\ADO01_V1.csproj", "{33CA76CB-4DA5-4506-9ACD-109DCE739157}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nightly_Workout_01", "Nightly_Workout_01\Nightly_Workout_01.csproj", "{B4D9C4F1-86AE-4580-AB38-D6CAA8526077}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{33CA76CB-4DA5-4506-9ACD-109DCE739157}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33CA76CB-4DA5-4506-9ACD-109DCE739157}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33CA76CB-4DA5-4506-9ACD-109DCE739157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D9C4F1-86AE-4580-AB38-D6CAA8526077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D9C4F1-86AE-4580-AB38-D6CAA8526077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D9C4F1-86AE-4580-AB38-D6CAA8526077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D9C4F1-86AE-4580-AB38-D6CAA8526077}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
