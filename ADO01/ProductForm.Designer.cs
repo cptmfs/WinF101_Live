@@ -640,19 +640,19 @@
             // menuCustomers
             // 
             this.menuCustomers.Name = "menuCustomers";
-            this.menuCustomers.Size = new System.Drawing.Size(180, 22);
+            this.menuCustomers.Size = new System.Drawing.Size(131, 22);
             this.menuCustomers.Text = "Customers";
             this.menuCustomers.Click += new System.EventHandler(this.menuCustomers_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(128, 6);
             // 
             // menuExit
             // 
             this.menuExit.Name = "menuExit";
-            this.menuExit.Size = new System.Drawing.Size(180, 22);
+            this.menuExit.Size = new System.Drawing.Size(131, 22);
             this.menuExit.Text = "Exit";
             // 
             // btnList
