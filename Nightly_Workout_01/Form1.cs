@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,8 @@ namespace Nightly_Workout_01
         SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True");
         private void ListOrders()
         {
+            // Uzun Sql Sorgumu View Oluşturarak OrderGrid adını verdim.
+            //Select OrderID,c.CompanyName as 'CustomerCompanyName',e.FirstName+' '+e.LastName as 'EmployeeNameSurname',s.CompanyName as 'ShipperCompanyName',ShipperID,EmployeeID from Orders o inner join Customers c on c.CustomerID = o.CustomerID                        inner join Shippers s on s.ShipperID = o.ShipVia inner join Employees e on e.EmployeeID = o.EmployeeID
             SqlCommand cmd = new SqlCommand("Select * from OrderGrid", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
