@@ -56,6 +56,8 @@
             this.txtCompanyNameAdd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mskPostalUpdate = new System.Windows.Forms.MaskedTextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.txtIDUpdate = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtContactNameUpdate = new System.Windows.Forms.TextBox();
@@ -77,14 +79,13 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txtCompanyNameUpdate = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.mskPostalUpdate = new System.Windows.Forms.MaskedTextBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.cbxCountry = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwCustomer)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -376,6 +377,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Customer Update";
             // 
+            // mskPostalUpdate
+            // 
+            this.mskPostalUpdate.Location = new System.Drawing.Point(250, 121);
+            this.mskPostalUpdate.Name = "mskPostalUpdate";
+            this.mskPostalUpdate.Size = new System.Drawing.Size(84, 20);
+            this.mskPostalUpdate.TabIndex = 11;
+            this.mskPostalUpdate.ValidatingType = typeof(int);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(178, 124);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(70, 13);
+            this.label22.TabIndex = 30;
+            this.label22.Text = "Postal Code :";
+            // 
             // txtIDUpdate
             // 
             this.txtIDUpdate.Location = new System.Drawing.Point(93, 17);
@@ -546,23 +564,6 @@
             this.label19.TabIndex = 4;
             this.label19.Text = "Company Name :";
             // 
-            // mskPostalUpdate
-            // 
-            this.mskPostalUpdate.Location = new System.Drawing.Point(250, 121);
-            this.mskPostalUpdate.Name = "mskPostalUpdate";
-            this.mskPostalUpdate.Size = new System.Drawing.Size(84, 20);
-            this.mskPostalUpdate.TabIndex = 11;
-            this.mskPostalUpdate.ValidatingType = typeof(int);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(178, 124);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(70, 13);
-            this.label22.TabIndex = 30;
-            this.label22.Text = "Postal Code :";
-            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -572,26 +573,26 @@
             this.label23.TabIndex = 5;
             this.label23.Text = "Search Text :";
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(813, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtSearch.Location = new System.Drawing.Point(813, 36);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(156, 20);
+            this.txtSearch.TabIndex = 6;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // cbxCountry
             // 
             this.cbxCountry.FormattingEnabled = true;
-            this.cbxCountry.Location = new System.Drawing.Point(813, 106);
+            this.cbxCountry.Location = new System.Drawing.Point(813, 62);
             this.cbxCountry.Name = "cbxCountry";
             this.cbxCountry.Size = new System.Drawing.Size(156, 21);
             this.cbxCountry.TabIndex = 7;
-            this.cbxCountry.SelectedIndexChanged += new System.EventHandler(this.cbxCountry_SelectedIndexChanged);
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(758, 109);
+            this.label24.Location = new System.Drawing.Point(758, 65);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(49, 13);
             this.label24.TabIndex = 8;
@@ -617,16 +618,28 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
+            // btnList
+            // 
+            this.btnList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnList.Location = new System.Drawing.Point(841, 89);
+            this.btnList.Name = "btnList";
+            this.btnList.Size = new System.Drawing.Size(108, 28);
+            this.btnList.TabIndex = 44;
+            this.btnList.Text = "List";
+            this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
+            // 
             // AdoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(988, 549);
+            this.Controls.Add(this.btnList);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.cbxCountry);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -703,11 +716,12 @@
         private System.Windows.Forms.MaskedTextBox mskPostalUpdate;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cbxCountry;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnList;
     }
 }
 

@@ -16,7 +16,7 @@ namespace ADO01
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdoForm());
+            Application.Run(new ProductForm());
         }
     }
 }

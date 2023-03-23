@@ -26,6 +26,7 @@ namespace ADO01
             LoadCategories();
             LoadCountry();
             txtIDUpdate.ReadOnly = true;
+            cbxCountry.SelectedIndex = 0;
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -163,13 +164,32 @@ namespace ADO01
             }
         }
 
-        private void cbxCountry_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            SqlCommand cmd7 = new SqlCommand("Select Country from Customers where Country=@Country",connection);
-            cmd7.Parameters.AddWithValue("@Country",cbxCountry.SelectedItem);
-            cmd7.ExecuteNonQuery();
+            connection.Open();
+            SqlDataAdapter ad8 = new SqlDataAdapter("Select * from Customers where CustomerID like '%" + txtSearch.Text + "%' or CompanyName like '%" + txtSearch.Text + "%' or ContactName like '%" + txtSearch.Text + "%'", connection);
+                DataTable dt4 = new DataTable();
+                ad8.Fill(dt4);
+                dgwCustomer.DataSource = dt4;
+            connection.Close();
+            if (txtSearch.Text == "")
+            {
+                BindGrid();
+            }
+        }
 
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd7 = new SqlCommand("Select * from Customers where Country=@Country", connection);
+            cmd7.Parameters.AddWithValue("@Country", cbxCountry.SelectedValue);
+            SqlDataAdapter da = new SqlDataAdapter(cmd7);
+            DataTable dt3 = new DataTable();
+            da.Fill(dt3);
+            dgwCustomer.DataSource = dt3;
 
+            connection.Close();
         }
     }
 }
