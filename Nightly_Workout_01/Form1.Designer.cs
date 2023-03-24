@@ -38,6 +38,7 @@
             this.btnEmployeeSearch = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnSearchAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,18 +63,17 @@
             // cbxEmployeeSearch
             // 
             this.cbxEmployeeSearch.FormattingEnabled = true;
-            this.cbxEmployeeSearch.Location = new System.Drawing.Point(689, 157);
+            this.cbxEmployeeSearch.Location = new System.Drawing.Point(689, 147);
             this.cbxEmployeeSearch.Name = "cbxEmployeeSearch";
             this.cbxEmployeeSearch.Size = new System.Drawing.Size(160, 26);
             this.cbxEmployeeSearch.TabIndex = 2;
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(689, 271);
+            this.txtSearch.Location = new System.Drawing.Point(687, 253);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(160, 24);
             this.txtSearch.TabIndex = 3;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label1
             // 
@@ -103,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(725, 127);
+            this.label2.Location = new System.Drawing.Point(725, 117);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 18);
             this.label2.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.btnEmployeeSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnEmployeeSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployeeSearch.Location = new System.Drawing.Point(719, 189);
+            this.btnEmployeeSearch.Location = new System.Drawing.Point(719, 179);
             this.btnEmployeeSearch.Name = "btnEmployeeSearch";
             this.btnEmployeeSearch.Size = new System.Drawing.Size(100, 31);
             this.btnEmployeeSearch.TabIndex = 7;
@@ -126,7 +126,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(702, 240);
+            this.label3.Location = new System.Drawing.Point(700, 222);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 18);
             this.label3.TabIndex = 8;
@@ -144,12 +144,25 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnSearchAll
+            // 
+            this.btnSearchAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnSearchAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchAll.Location = new System.Drawing.Point(719, 283);
+            this.btnSearchAll.Name = "btnSearchAll";
+            this.btnSearchAll.Size = new System.Drawing.Size(100, 31);
+            this.btnSearchAll.TabIndex = 10;
+            this.btnSearchAll.Text = "Search All";
+            this.btnSearchAll.UseVisualStyleBackColor = false;
+            this.btnSearchAll.Click += new System.EventHandler(this.btnSearchAll_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(874, 360);
+            this.Controls.Add(this.btnSearchAll);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnEmployeeSearch);
@@ -183,6 +196,7 @@
         private System.Windows.Forms.Button btnEmployeeSearch;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnSearchAll;
     }
 }
 

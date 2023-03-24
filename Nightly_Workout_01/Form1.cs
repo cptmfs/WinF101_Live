@@ -84,21 +84,50 @@ namespace Nightly_Workout_01
             dataGridView1.DataSource= dt4;
         }
 
-        private void txtSearch_TextChanged(object sender, EventArgs e)
-        {
-            SqlDataAdapter adapter5 = new SqlDataAdapter("Select * from OrderGrid where CustomerCompanyName like '%"+txtSearch.Text+ "%' or EmployeeNameSurname like '%" + txtSearch.Text+ "%' or ShipperCompanyName like '%"+txtSearch.Text+"%'", connection);
-            DataTable dt5 = new DataTable();    
-            adapter5.Fill(dt5); 
-            dataGridView1.DataSource= dt5;
-            if (txtSearch.Text=="")
-            {
-                ListOrders();
-            }
-        }
+        //private void txtSearch_TextChanged(object sender, EventArgs e) // Burada textbox'a veri girildikçe arama yapıyor...
+        //{
+        //    SqlDataAdapter adapter5 = new SqlDataAdapter("Select * from OrderGrid where CustomerCompanyName like '%"+txtSearch.Text+ "%' or EmployeeNameSurname like '%" + txtSearch.Text+ "%' or ShipperCompanyName like '%"+txtSearch.Text+"%'", connection);
+        //    DataTable dt5 = new DataTable();    
+        //    adapter5.Fill(dt5); 
+        //    dataGridView1.DataSource= dt5;
+        //    if (txtSearch.Text=="")
+        //    {
+        //        ListOrders();
+        //    }
+        //}
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void SearchAll()
+        {
+            string query = "Select * from OrderGrid where ShipperID=@ShipperID";
+            query += " and EmployeeID=@EmployeeID";
+            query += " and CustomerCompanyName like '%" + txtSearch.Text + "%' or EmployeeNameSurname like '%" + txtSearch.Text + "%' or ShipperCompanyName like '%" + txtSearch.Text + "%'";
+
+            SqlCommand cmd5 = new SqlCommand(query,connection);
+
+            cmd5.Parameters.AddWithValue("@ShipperID", cbxShipperCN.SelectedValue);
+            cmd5.Parameters.AddWithValue("@EmployeeID", cbxEmployeeSearch.SelectedValue);
+
+            
+            SqlDataAdapter adapter6 = new SqlDataAdapter(cmd5);
+
+            DataTable dt6 = new DataTable();
+            adapter6.Fill(dt6);
+            dataGridView1.DataSource= dt6;
+            if (txtSearch.Text=="")
+            {
+                ListOrders();
+            }
+            
+        }
+
+        private void btnSearchAll_Click(object sender, EventArgs e)
+        {
+            SearchAll();
         }
     }
 }
