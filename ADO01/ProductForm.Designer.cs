@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,7 +47,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtProductIDU = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.nudDisconU = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.txtUnitStockU = new System.Windows.Forms.TextBox();
             this.txtUnitPriceU = new System.Windows.Forms.TextBox();
@@ -70,7 +69,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtProductIDAdd = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.nudDisconAdd = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.txtUnitsInStockAdd = new System.Windows.Forms.TextBox();
             this.txtUnitPriceAdd = new System.Windows.Forms.TextBox();
@@ -89,11 +87,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuExit = new System.Windows.Forms.ToolStripMenuItem();
             this.btnList = new System.Windows.Forms.Button();
+            this.cbxDisconU = new System.Windows.Forms.CheckBox();
+            this.cbxDisconAdd = new System.Windows.Forms.CheckBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDisconU)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDisconAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -214,9 +212,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cbxDisconU);
             this.groupBox2.Controls.Add(this.txtProductIDU);
             this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.nudDisconU);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.txtUnitStockU);
             this.groupBox2.Controls.Add(this.txtUnitPriceU);
@@ -257,18 +255,6 @@
             this.label19.Size = new System.Drawing.Size(64, 13);
             this.label19.TabIndex = 52;
             this.label19.Text = "Product ID :";
-            // 
-            // nudDisconU
-            // 
-            this.nudDisconU.Location = new System.Drawing.Point(256, 128);
-            this.nudDisconU.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudDisconU.Name = "nudDisconU";
-            this.nudDisconU.Size = new System.Drawing.Size(84, 20);
-            this.nudDisconU.TabIndex = 50;
             // 
             // label17
             // 
@@ -430,9 +416,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbxDisconAdd);
             this.groupBox1.Controls.Add(this.txtProductIDAdd);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.nudDisconAdd);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.txtUnitsInStockAdd);
             this.groupBox1.Controls.Add(this.txtUnitPriceAdd);
@@ -474,18 +460,6 @@
             this.label18.Size = new System.Drawing.Size(64, 13);
             this.label18.TabIndex = 36;
             this.label18.Text = "Product ID :";
-            // 
-            // nudDisconAdd
-            // 
-            this.nudDisconAdd.Location = new System.Drawing.Point(257, 121);
-            this.nudDisconAdd.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nudDisconAdd.Name = "nudDisconAdd";
-            this.nudDisconAdd.Size = new System.Drawing.Size(84, 20);
-            this.nudDisconAdd.TabIndex = 34;
             // 
             // label16
             // 
@@ -583,34 +557,34 @@
             this.dgwProduct.AllowUserToAddRows = false;
             this.dgwProduct.AllowUserToDeleteRows = false;
             this.dgwProduct.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgwProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgwProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgwProduct.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgwProduct.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgwProduct.Location = new System.Drawing.Point(0, 27);
             this.dgwProduct.Name = "dgwProduct";
             this.dgwProduct.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgwProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgwProduct.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgwProduct.RowHeadersVisible = false;
             this.dgwProduct.Size = new System.Drawing.Size(686, 318);
             this.dgwProduct.TabIndex = 32;
@@ -665,6 +639,24 @@
             this.btnList.UseVisualStyleBackColor = true;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
+            // cbxDisconU
+            // 
+            this.cbxDisconU.AutoSize = true;
+            this.cbxDisconU.Location = new System.Drawing.Point(259, 130);
+            this.cbxDisconU.Name = "cbxDisconU";
+            this.cbxDisconU.Size = new System.Drawing.Size(15, 14);
+            this.cbxDisconU.TabIndex = 53;
+            this.cbxDisconU.UseVisualStyleBackColor = true;
+            // 
+            // cbxDisconAdd
+            // 
+            this.cbxDisconAdd.AutoSize = true;
+            this.cbxDisconAdd.Location = new System.Drawing.Point(257, 124);
+            this.cbxDisconAdd.Name = "cbxDisconAdd";
+            this.cbxDisconAdd.Size = new System.Drawing.Size(15, 14);
+            this.cbxDisconAdd.TabIndex = 54;
+            this.cbxDisconAdd.UseVisualStyleBackColor = true;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -691,10 +683,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDisconU)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudDisconAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -756,12 +746,12 @@
         private System.Windows.Forms.TextBox txtQuantityPerUnitAdd;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.NumericUpDown nudDisconU;
-        private System.Windows.Forms.NumericUpDown nudDisconAdd;
         private System.Windows.Forms.TextBox txtProductIDU;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtProductIDAdd;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.CheckBox cbxDisconU;
+        private System.Windows.Forms.CheckBox cbxDisconAdd;
     }
 }

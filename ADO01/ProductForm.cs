@@ -120,7 +120,7 @@ namespace ADO01
             cmd2.Parameters.AddWithValue("@p6", txtUnitsInStockAdd.Text);
             cmd2.Parameters.AddWithValue("@p7", txtUnitsOnOrderAdd.Text);
             cmd2.Parameters.AddWithValue("@p8", txtReorderLevelAdd.Text);
-            cmd2.Parameters.AddWithValue("@p9", nudDisconAdd.Value);
+            cmd2.Parameters.AddWithValue("@p9", cbxDisconAdd.Checked); // Checkbox'ın parametre ataması "Checked"
             cmd2.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("New Product Successfully Added", "Product Add", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -139,7 +139,7 @@ namespace ADO01
             cmd3.Parameters.AddWithValue("@p6", txtUnitStockU.Text);
             cmd3.Parameters.AddWithValue("@p7", txtUnitsOnOrderU.Text);
             cmd3.Parameters.AddWithValue("@p8", txtReorderLevelU.Text);
-            cmd3.Parameters.AddWithValue("@p9", nudDisconU.Value);
+            cmd3.Parameters.AddWithValue("@p9", cbxDisconU.Checked);
             cmd3.Parameters.AddWithValue("@p10", txtProductIDU.Text);
             cmd3.ExecuteNonQuery();
             connection.Close();
@@ -160,6 +160,7 @@ namespace ADO01
                 txtQuantityPerUnitU.Text = dgwProduct.Rows[e.RowIndex].Cells[6].Value.ToString();
                 txtUnitsOnOrderU.Text = dgwProduct.Rows[e.RowIndex].Cells[7].Value.ToString();
                 txtReorderLevelU.Text = dgwProduct.Rows[e.RowIndex].Cells[8].Value.ToString();
+                cbxDisconU.Checked = (bool)dgwProduct.Rows[e.RowIndex].Cells[9].Value;
             }
         }
 
